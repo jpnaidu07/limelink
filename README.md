@@ -21,6 +21,7 @@ Start with an Electron capture prototype to validate the flow. Make the native c
 5. [Security, isolation, and operations](docs/05-security-and-operations.md)
 6. [Delivery roadmap and release acceptance](docs/06-delivery-and-validation.md)
 7. [Research sources and decision register](docs/07-research-and-decisions.md)
+8. [End-to-end and component designs](docs/design/README.md)
 
 The design describes intended behavior. It does not claim all Windows configurations, games, networks, or browsers can be supported. Unsupported states must be detected and explained, and supported states must pass the release matrix.
 
