@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desktop Capture Host</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="renderer.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="eyebrow"><span class="signal-dot"></span> WINDOWS HOST</div>
+    <div class="heading-row">
+      <div><h1>Desktop capture</h1><p>Select a display and preview its live video on this device.</p></div>
+      <span id="status" class="status" data-state="idle" role="status">Idle</span>
+    </div>
+  </header>
+  <main>
+    <section class="card toolbar" aria-label="Capture controls">
+      <label for="display">Display
+        <select id="display" disabled><option value="">Looking for displays…</option></select>
+      </label>
+      <button id="refresh" title="Refresh display list">Refresh</button>
+      <label for="fps">Frame rate limit
+        <select id="fps"><option>30</option><option>60</option></select>
+      </label>
+      <button id="start" class="primary" disabled>Start capture</button>
+      <button id="stop" class="stop" disabled>Stop</button>
+    </section>
+    <p id="message" class="message" role="status">Choose a display to get started.</p>
+    <section class="card player" aria-label="Local preview">
+      <div class="player-heading"><h2>Live preview</h2><span id="metrics">No active capture</span></div>
+      <div class="viewport">
+        <video id="preview" autoplay muted playsinline hidden></video>
+        <div id="empty" class="empty"><span class="monitor" aria-hidden="true"></span><strong>No display running</strong><span>Your live preview will appear here.</span></div>
+      </div>
+      <div class="player-foot">Local video only <span aria-hidden="true">·</span> Press Esc to stop <span aria-hidden="true">·</span> Previewing this window may show a mirror effect</div>
+    </section>
+    <section class="card diagnostics" aria-label="Host diagnostics">
+      <div><h2>Windows desktop</h2><p id="diagnostics" role="status">Desktop diagnostics not checked.</p></div>
+      <button id="probe">Check desktop</button>
+    </section>
+  </main>
+</body>
+</html>

@@ -4,7 +4,7 @@
 
 Browser access to a Windows desktop or selected application, designed for interactive desktop use and low-latency gaming.
 
-**Status: Control API starter implemented.** The loopback FastAPI service provides `GET /health`; streaming, signaling, and the installer are still planned. Performance numbers in these documents are proposed acceptance targets, not measured results.
+**Status: local Windows desktop capture and Control API starter implemented.** The [Electron host](apps/host/README.md) previews a selected display; the loopback FastAPI service provides `GET /health`. Remote streaming, signaling, and the installer are still planned. Performance numbers in these documents are proposed acceptance targets, not measured results.
 
 ## Recommended design
 
@@ -49,7 +49,7 @@ tests/
 docs/                   Requirements, ADRs, runbooks, evidence
 ```
 
-Start with the [Control API quickstart](services/control/README.md). The remaining implementation directories are planned.
+Start with the [Windows capture host quickstart](apps/host/README.md) or the [Control API quickstart](services/control/README.md). The remaining implementation directories are planned.
 
 ## Initial scope
 

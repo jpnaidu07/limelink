@@ -1,0 +1,17 @@
+{
+  "name": "desktop-capture-host",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/capture-grants.test.cjs",
+    "test:desktop": "electron test/desktop-smoke.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "electron": "45.3.2"
+  }
+}
