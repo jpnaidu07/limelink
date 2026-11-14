@@ -21,7 +21,7 @@ Use bounded opaque strings and nonnegative safe integers. Crossing an epoch boun
 ```mermaid
 flowchart LR
     Build["Versioned contract schemas"] --> Web["Browser bindings and validation"]
-    Build --> Api["Control bindings and validation"]
+    Build --> Api["Python control bindings and validation"]
     Build --> Win["Native bindings and validation"]
     Web <-->|REST and WSS envelopes| Api
     Api <-->|Framed ACL protected IPC| Win

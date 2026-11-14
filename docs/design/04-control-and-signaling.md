@@ -19,7 +19,7 @@ flowchart LR
     Rest --> Ice["Bounded TURN credential issuer"]
 ```
 
-Run TypeScript control services in a supervised unprivileged process. Serve static assets with strict content security policy, no third-party runtime code and no wildcard CORS. Use a maintained HTTP framework with explicit request and server limits; verify Host and Origin against canonical origin, and honor forwarded fields only from configured proxies. Use local SQLite with migrations and restricted ACLs. Secrets are protected separately. Do not bind a native IPC endpoint to an HTTP route.
+Run the control service as a supervised, unprivileged Python process. The [FastAPI/Uvicorn starter](../../services/control/README.md) exposes only `GET /health` on loopback in the documented developer configuration. WebSocket signaling remains disabled until authenticated binding is implemented. For the shipping service, serve static assets with strict content security policy, no third-party runtime code and no wildcard CORS. Set explicit request and server limits; verify Host and Origin against canonical origin, and honor forwarded fields only from configured proxies. Use local SQLite with migrations and restricted ACLs. Secrets are protected separately. Do not bind a native IPC endpoint to an HTTP route.
 
 ## Identity, policy and data model
 

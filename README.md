@@ -4,7 +4,7 @@
 
 Browser access to a Windows desktop or selected application, designed for interactive desktop use and low-latency gaming.
 
-**Status: researched architecture and implementation plan. No streaming application or installer has been implemented or benchmarked.** Prepared 30 October 2026. Performance numbers in these documents are proposed acceptance targets, not measured results.
+**Status: Control API starter implemented.** The loopback FastAPI service provides `GET /health`; streaming, signaling, and the installer are still planned. Performance numbers in these documents are proposed acceptance targets, not measured results.
 
 ## Recommended design
 
@@ -49,7 +49,7 @@ tests/
 docs/                   Requirements, ADRs, runbooks, evidence
 ```
 
-These are planned code directories; only documentation exists in this initial repository.
+Start with the [Control API quickstart](services/control/README.md). The remaining implementation directories are planned.
 
 ## Initial scope
 
@@ -59,7 +59,7 @@ No default administrator password. No anonymous signaling or capture. No public 
 
 ## Repository publication
 
-The GitHub repository is public: [jpnaidu07/limelink](https://github.com/jpnaidu07/limelink). This initial repository contains the researched production plan; application implementation has not started.
+The GitHub repository is public: [jpnaidu07/limelink](https://github.com/jpnaidu07/limelink).
 
 ## License
 
