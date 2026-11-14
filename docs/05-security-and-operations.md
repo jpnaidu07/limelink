@@ -66,7 +66,7 @@ Use signed Windows packages and verify update signatures/publisher identity befo
 
 CI produces SBOMs, vulnerability/license scans, provenance, hashes and reproducible build instructions. Protect release signing keys outside ordinary build jobs; require protected release environments. Keep security updates for the control plane, Electron/Chromium, native dependencies, relay and any input/display drivers.
 
-Review exact distribution obligations for Electron, libwebrtc, codecs, GPU SDKs, optional nut.js packages, drivers and any Sunshine-derived components. Codec availability does not resolve patent/distribution obligations. Choose this project's license before public publication. This document records a release dependency review task, not a legal determination.
+Review exact distribution obligations for Electron, libwebrtc, codecs, GPU SDKs, optional nut.js packages, drivers and any Sunshine-derived components. Codec availability does not resolve patent/distribution obligations. LimeLink's [MIT license](../LICENSE) covers its original material; it does not change third-party terms.
 
 ## 7. Operations and observability
 

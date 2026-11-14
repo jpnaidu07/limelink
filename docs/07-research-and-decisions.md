@@ -83,7 +83,7 @@ Proceed with the plan's defaults unless changed, but record the choices before c
 - Exact first Windows/GPU/browser support: default Windows 11 x64, one reference NVIDIA GPU and desktop Chromium.
 - Deployment: default LAN/VPN first, public direct host plus TURN next; hosted gateway is a separate deliverable.
 - Resolution/FPS: default 1080p60 SDR; 120 FPS/HDR/4K are conditional later tiers.
-- Distribution model/license, nut.js use, driver provider and codec redistribution review: unresolved owner/release decisions.
+- The project's original material is MIT licensed. Installer distribution, nut.js use, driver provider and codec redistribution review remain release decisions.
 - Authentication: individual accounts, local owner bootstrap; public admin requires MFA implementation.
 - Recording/clipboard/file transfer: disabled and out of initial scope.
 
